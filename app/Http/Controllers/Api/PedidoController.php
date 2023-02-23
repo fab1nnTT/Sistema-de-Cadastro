@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Pedido;
 
 class PedidoController extends Controller
 
@@ -18,7 +19,7 @@ class PedidoController extends Controller
         try {
             $pedido = new Pedido();
 
-            $pedido->NomePedido = $request->Nomepedido;
+            $pedido->NumeroPedido = $request->NumeroPedido;
             $pedido->DtPedido = $request->DtPedido;
             $pedido->Quantidade = $request->Quantidade;
 
@@ -83,3 +84,5 @@ class PedidoController extends Controller
         }
     }
 }
+
+//Testes
