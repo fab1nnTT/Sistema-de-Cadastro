@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('NomeProduto', 100);
             $table->string('CodBarras', 100);
-            $table->string('ValorUnitario', 20);
+            $table->double('ValorUnitario', 20);
         });
     }
 
