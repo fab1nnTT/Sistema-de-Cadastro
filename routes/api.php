@@ -22,6 +22,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('/status', 'Api\ClienteController@status');
 
+//Clientes
+
 Route::namespace('Api')->group( function() {
 
     Route::post('/clientes/add', 'ClienteController@add');
@@ -32,8 +34,22 @@ Route::namespace('Api')->group( function() {
     Route::put('clientes/{id}', 'ClienteController@update');
 
     Route::delete('/clientes/{id}', 'ClienteController@delete');
+
+//Produtos
+
+    Route::post('/produtos/add', 'ProdutoController@add');
+
+    Route::get('/produtos', 'ProdutoController@list');
+    Route::get('produtos/{id}', 'ProdutoController@select');
+
+    Route::put('produtos/{id}', 'ProdutoController@update');
+
+    Route::delete('/produtos/{id}', 'ProdutoController@delete');
+
+
 });
 
+// =================================================================
 
 
 
