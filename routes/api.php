@@ -47,8 +47,17 @@ Route::namespace('Api')->group( function() {
     Route::delete('/produtos/{id}', 'ProdutoController@delete');
 
     
+//Pedidos
 
-});
+    Route::post('/pedidos/add', 'PedidoController@add');
+
+    Route::get('/pedidos', 'PedidoController@list');
+    Route::get('pedidos/{id}', 'PedidoController@select');
+
+    Route::put('pedidos/{id}', 'PedidoController@update');
+
+    Route::delete('/pedidos/{id}', 'PedidoController@delete');
+    });
 
 // =================================================================
 
