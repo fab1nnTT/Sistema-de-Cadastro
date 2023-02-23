@@ -22,13 +22,21 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::get('/status', 'Api\ClienteController@status');
 
+Route::namespace('Api')->group( function() {
+
+    Route::post('/clientes/add', 'ClienteController@add');
+
+    Route::get('/clientes', 'ClienteController@list');
+    Route::get('clientes/{id}', 'ClienteController@select');
+
+    Route::put('clientes/{id}', 'ClienteController@update');
+
+    Route::delete('/clientes/{id}', 'ClienteController@delete');
+});
 
 
 
 
 
 
-//Route::get('/status', [ClienteController::class, 'status']);
-
-//Route::get('/status', 'Api\ClienteController@status');
 
