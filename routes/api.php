@@ -46,6 +46,7 @@ Route::namespace('Api')->group( function() {
 
     Route::delete('/produtos/{id}', 'ProdutoController@delete');
 
+    
 
 });
 
