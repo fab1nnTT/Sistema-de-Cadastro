@@ -53,7 +53,7 @@ class PedidoController extends Controller
 
             $pedido = Pedido::find($id);
 
-            $pedido->NomePedido = $request->Nomepedido;
+            $pedido->NumeroPedido = $request->NumeroPedido;
             $pedido->DtPedido = $request->DtPedido;
             $pedido->Quantidade = $request->Quantidade;
 
@@ -85,4 +85,3 @@ class PedidoController extends Controller
     }
 }
 
-//Testes
