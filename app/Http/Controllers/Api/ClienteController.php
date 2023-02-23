@@ -19,9 +19,9 @@ class ClienteController extends Controller
         try {
             $cliente = new Cliente();
 
-            $cliente->nome = $request->nome;
-            $cliente->cpf = $request->cpf;
-            $cliente->email = $request->email;
+            $cliente->NomeCliente = $request->NomeCliente;
+            $cliente->CPF = $request->CPF;
+            $cliente->Email = $request->Email;
 
             $cliente->save();
 
@@ -53,9 +53,9 @@ class ClienteController extends Controller
 
             $cliente = Cliente::find($id);
 
-            $cliente->nome = $request->nome;
-            $cliente->cpf = $request->cpf;
-            $cliente->email = $request->email;
+            $cliente->NomeCliente = $request->NomeCliente;
+            $cliente->CPF = $request->CPF;
+            $cliente->Email = $request->Email;
 
             $cliente->save();
 

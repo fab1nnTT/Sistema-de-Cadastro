@@ -18,9 +18,9 @@ class ProdutoController extends Controller
             try {
                 $produto = new Produto();
     
-                $produto->nomeProduto = $request->nomeProduto;
-                $produto->valor = $request->valor;
-                $produto->quantidade = $request->quantidade;
+                $produto->NomeProduto = $request->NomeProduto;
+                $produto->CodBarras = $request->CodBarras;
+                $produto->ValorUnitario = $request->ValorUnitario;
     
                 $produto->save();
     
@@ -52,9 +52,9 @@ class ProdutoController extends Controller
     
                 $produto = Produto::find($id);
     
-                $produto->nomeProduto = $request->nomeProduto;
-                $produto->valor = $request->valor;
-                $produto->quantidade = $request->quantidade;
+                $produto->NomeProduto = $request->NomeProduto;
+                $produto->CodBarras = $request->CodBarras;
+                $produto->ValorUnitario = $request->ValorUnitario;
     
                 $produto->save();
     
