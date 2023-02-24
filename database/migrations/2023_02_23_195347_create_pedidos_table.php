@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('pedidos', function (Blueprint $table) {
             $table->id();
-            $table->string('NumeroPedido', 100);
+            $table->string('NumeroPedido',);
             $table->date('DtPedido',);
-            $table->string('Quantidade', 100);
+            $table->string('Quantidade',);
            
         });
     }
