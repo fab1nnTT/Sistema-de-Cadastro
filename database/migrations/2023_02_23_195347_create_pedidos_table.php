@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('NumeroPedido', 100);
             $table->date('DtPedido',);
             $table->string('Quantidade', 100);
+           
         });
     }
 
@@ -27,3 +28,6 @@ return new class extends Migration
         Schema::dropIfExists('pedidos');
     }
 };
+
+
+
