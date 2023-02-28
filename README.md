@@ -1,15 +1,58 @@
-API Rest de Cadastro com CRUD. Incluindo tabelas de:
+Projeto realizado para teste fullstack da Empresa Inforgeneses
+---
 
--Clientes
+## Intuito da aplicação
 
-![tabelacliente](https://user-images.githubusercontent.com/84263243/221190389-0d5de94f-54fb-4e5f-897e-bc4c9f227841.png)
+Sistema de cadastro onde usuário cadastra clientes, produtos e pedidos.
 
--Pedidos 
+## Como clonar o projeto?
+
+No seu terminal, clone o projeto com o comando abaixo:
+
+git clone https://github.com/fab1nnTT/Sistema-de-Cadastro.git
+
+---
+
+# Backend
+
+O backend do projeto foi feito em Laravel com banco de dados em MySQL.
+Nele, foram utilizados:
+
+-[Laravel](https://laravel.com/docs/10.x/installation) (para a construção do CRUD)
 
 
-![tabelapedido](https://user-images.githubusercontent.com/84263243/221190656-ff0b7e28-8275-41e8-bfd0-7e616c6ae92c.png)
+## Como rodar?
+será necessário a instalação do Xampp:
+[Xampp](https://www.apachefriends.org/pt_br/download.html)
+
+Irá precisar também de um arquivo .env com as seguintes variáveis:
+
+DB_CONNECTION=mysql.
+
+DB_HOST=127.0.0.1.
+
+DB_PORT=3306
+
+DB_DATABASE=sistema_cadastro
+
+DB_USERNAME=root
+
+DB_PASSWORD=
+
+### Para ambiente de desenvolvimento:
+
+-composer install
+
+-php artisan migrate
+
+-php artisan serve
 
 
--Produtos
+Após os comandos, o projeto estará rodando na porta declarada no arquivo .env (http://localhost/:3306)
 
-![tabelaproduto](https://user-images.githubusercontent.com/84263243/221190791-9f99ec2c-98d0-40c3-abd0-325eadc0d6c5.png)
+---
+
+
+Teste feito por Fábio Henrique.
+
+qualquer dúvidas, entre em contato por email: fabiohedias@hotmail.com
