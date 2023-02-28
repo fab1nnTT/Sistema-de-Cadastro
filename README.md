@@ -1,4 +1,4 @@
-Projeto realizado para teste fullstack da Empresa Inforgeneses
+Projeto realizado para teste Fullstack da Empresa Inforgeneses
 ---
 
 ## Intuito da aplicação
